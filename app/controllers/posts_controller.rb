@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-
+  helper_method :params #ensures view gets posts params
   def index
     @posts = Post.all
   end
